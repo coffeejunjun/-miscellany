@@ -1,0 +1,15 @@
+curl -H "Content-Type: application/json" -XPOST http://localhost:9200/_template/netflow -d ' {
+   "index_patterns" : ["netflow-*"],
+   "mappings" : {
+      "properties" : {
+        "@timestamp" : {
+          "type" : "date",
+            "format" : "dateOptionalTime"
+           },
+      "geoip_pin" : {
+             "type" : "geo_point"
+     }
+   }
+  }  
+}
+} '
