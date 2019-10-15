@@ -4,7 +4,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 git clone https://github.com/tomasr/molokai.git
 
-mv molokai/colors/molokai.vim ~/.vim/colors/
+mv molokai/colors/ ~/.vim/colors/
 
 rm -rf ./molokai/
 
