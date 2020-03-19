@@ -1,5 +1,5 @@
-syntax on
-colorscheme molokai
+syntax enable
+set background=dark
 set t_Co=256
 set vb t_vb=
 set number
@@ -28,4 +28,3 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 
 call plug#end()
-
