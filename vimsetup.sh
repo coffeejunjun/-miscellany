@@ -7,3 +7,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 #rm -rf ./molokai/
 
 cp ./vimrc ~/.vimrc
+echo "Finish !!"
