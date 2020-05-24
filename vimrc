@@ -16,11 +16,15 @@ set smartcase  "検索文字列に大文字が含まれている場合は区別�
 set incsearch  "検索文字列入力時に順次対象文字列にヒットさせる"
 set mouse=a   "マウス操作が可能になる"
 set expandtab "tabを半角スペースで挿入する"
+set hlsearch "検索単語をハイライト表示する"
+set wildmenu "コマンドライン補完がされる"
 
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
+"F1キーのヘルプをEscに変える
+nnoremap <F1> <Esc>g<C-G>
 
 call plug#begin('~/.vim/plugged')
 
