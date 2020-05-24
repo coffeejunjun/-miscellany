@@ -1,9 +1,9 @@
 #!/bin/bash
+echo -e "プラグインの取得中\n"
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > /dev/null 2>&1
 
-#git clone https://github.com/tomasr/molokai.git
-#mv molokai/colors/ ~/.vim/colors/
-#rm -rf ./molokai/
-
+wait
 cp ./vimrc ~/.vimrc
+echo -e "インストールが完了しました。\nvimを開き :PlugInstall と入力してください。"
