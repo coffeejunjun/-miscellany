@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp ./vimrc ~/.vimrc
+cp $(cd $(dirname $0); pwd)/vimrc ~/.vimrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > /dev/null 2>&1
 
@@ -12,5 +12,5 @@ fi
 echo "Installation is complete !"
 echo "Open vim and type :PlugInstall"
 
-echo "rm -rf $(dirname $0)/"
-rm -rf $(dirname $0)/
+rm -rf $(cd $(dirname $0); pwd)/
+
