@@ -25,6 +25,9 @@ set softtabstop=2
 "F1キーのヘルプをEscに変える
 nnoremap <F1> <Esc>g<C-G>
 
+"!!wでsudoで書き込みできるようにする"
+cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
